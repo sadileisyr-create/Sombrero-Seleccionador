@@ -1,22 +1,53 @@
-<h1>🔮🎩 Colegio Hogwarts de Magia y Hechicería 🎩🔮</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts - Sombrero Seleccionador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h3>🔐 Panel de Jefes y Prefectos</h3>
-<p>Pega las respuestas así: 1.A 2.C 3.B 4.D 5.A 6.B 7.C 8.D 9.A 10.B</p>
+  <!-- Conexión al CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<input type="text" id="respuestasTexto" style="width:80%; padding:8px;">
-<br><br>
+<body>
 
-<h3>⚖️ Cantidad de estudiantes actuales</h3>
-❤️ Gryffindor: <input type="number" id="gryffindorInput" value="13" style="width:60px;">
-💙 Ravenclaw: <input type="number" id="ravenclawInput" value="18" style="width:60px;">
-💛 Hufflepuff: <input type="number" id="hufflepuffInput" value="11" style="width:60px;">
-💚 Slytherin: <input type="number" id="slytherinInput" value="12" style="width:60px;">
-<br><br>
+  <h1>🔮🎩 Colegio Hogwarts 🎩🔮</h1>
 
-<button onclick="procesarRespuestas()">🎩 Asignar Casa</button>
+  <h3>Panel de Jefes y Prefectos</h3>
+  <p>Pega las respuestas así: 1.A 2.C 3.B 4.D 5.A 6.B 7.C 8.D 9.A 10.B</p>
 
-<h2 id="resultado"></h2>
-<p id="contador"></p>
-<p id="detalle"></p>
+  <input type="text" id="respuestasTexto" style="width:80%; padding:8px;">
+  
+  <br><br>
 
-<div id="escudo" style="font-size:100px; margin-top:20px;"></div>
+  <h3>Cantidad actual de estudiantes</h3>
+
+  ❤️ Gryffindor:
+  <input type="number" id="gryffindorInput" value="13" style="width:60px;">
+  <br><br>
+
+  💙 Ravenclaw:
+  <input type="number" id="ravenclawInput" value="18" style="width:60px;">
+  <br><br>
+
+  💛 Hufflepuff:
+  <input type="number" id="hufflepuffInput" value="11" style="width:60px;">
+  <br><br>
+
+  💚 Slytherin:
+  <input type="number" id="slytherinInput" value="12" style="width:60px;">
+  
+  <br><br>
+
+  <button onclick="procesarRespuestas()">🎩 Asignar Casa</button>
+
+  <h2 id="resultado"></h2>
+  <p id="detalle"></p>
+  <p id="contador"></p>
+  <div id="escudo" style="font-size:100px; margin-top:20px;"></div>
+
+  <!-- MUY IMPORTANTE -->
+  <script src="script.js"></script>
+
+</body>
+</html>
