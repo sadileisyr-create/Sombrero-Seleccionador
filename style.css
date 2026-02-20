@@ -1,0 +1,25 @@
+body {
+  background: #0d0d0d;
+  color: white;
+  font-family: Georgia;
+  text-align: center;
+}
+
+input[type="text"], input[type="number"] {
+  font-size: 16px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Colores de cada casa */
+#resultado.gryffindor { color: #7f0909; }
+#resultado.ravenclaw { color: #222f5b; }
+#resultado.hufflepuff { color: #eee117; }
+#resultado.slytherin { color: #1a472a; }
