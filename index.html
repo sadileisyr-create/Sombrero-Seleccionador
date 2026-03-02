@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Hogwarts - Sombrero Seleccionador</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Conexión al CSS -->
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Sombrero Seleccionador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header class="c-flex">
+        <h1>🔮🎩 Colegio Hogwarts de Magia y Hechicería 🎩🔮</h1>
+    </header>
 
-  <h1>🔮🎩 Colegio Hogwarts 🎩🔮</h1>
+    <main class="c-flex">
+        <h2>Panel de Jefes y Prefectos</h2>
 
-  <h3>Panel de Jefes y Prefectos</h3>
-  <p>Pega las respuestas así: 1.A 2.C 3.B 4.D 5.A 6.B 7.C 8.D 9.A 10.B</p>
+        <section class="cantidadSection c-flex">
+            <h3>Cantidad de estudiantes</h3>
 
-  <input type="text" id="respuestasTexto" style="width:80%; padding:8px;">
-  
-  <br><br>
+            <div class="cantidadInputs">
+                <div>
+                    <label for="gryffindorInput" class="cantidadLabel">❤️ Gryffindor</label>
+                    <input type="number" id="gryffindorInput" class="cantidadInput" value="13">
+                </div>
 
-  <h3>Cantidad actual de estudiantes</h3>
+                <div>
+                    <label for="ravenclawInput" class="cantidadLabel">💙 Ravenclaw</label>
+                    <input type="number" id="ravenclawInput" class="cantidadInput" value="18">
+                </div>
 
-  ❤️ Gryffindor:
-  <input type="number" id="gryffindorInput" value="13" style="width:60px;">
-  <br><br>
+                <div>
+                    <label for="hufflepuffInput" class="cantidadLabel">💛 Hufflepuff</label>
+                    <input type="number" id="hufflepuffInput" class="cantidadInput" value="11">
+                </div>
 
-  💙 Ravenclaw:
-  <input type="number" id="ravenclawInput" value="18" style="width:60px;">
-  <br><br>
+                <div>
+                    <label for="slytherinInput" class="cantidadLabel">💚 Slytherin</label>
+                    <input type="number" id="slytherinInput" class="cantidadInput" value="12">
+                </div>
+            </div>
+        </section>
 
-  💛 Hufflepuff:
-  <input type="number" id="hufflepuffInput" value="11" style="width:60px;">
-  <br><br>
+        <section class="respuestasSection c-flex">
+            <h3>Respuestas del sombrero</h3>
 
-  💚 Slytherin:
-  <input type="number" id="slytherinInput" value="12" style="width:60px;">
-  
-  <br><br>
+            <div>
+                <label for="respuestasTexto">Mensaje</label>
+                <input type="text" id="respuestasTexto" class="respuestasInput">
 
-  <button onclick="procesarRespuestas()">🎩 Asignar Casa</button>
+                <button class="limpiarButton" onclick="limpiarRespuestas()">Limpiar</button>
+            </div>
 
-  <h2 id="resultado"></h2>
-  <p id="detalle"></p>
-  <p id="contador"></p>
-  <div id="escudo" style="font-size:100px; margin-top:20px;"></div>
+            <button class="respuestasButton" onclick="procesarRespuestas()">🎩 Asignar Casa</button>
+        </section>
 
-  <!-- MUY IMPORTANTE -->
-  <script src="script.js"></script>
+        <section class="resultadoSection c-flex">
+            <p id="puntos"></p>
+            <h2 id="resultado"></h2>
+        </section>
+    </main>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
