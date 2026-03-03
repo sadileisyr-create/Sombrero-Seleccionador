@@ -81,7 +81,10 @@ function procesarRespuestas() {
     estudiantes[casaAsignada]++;
 
     let resultadoEl = document.getElementById("resultado");
-    resultadoEl.innerHTML = `Propuesta de casa: ${casaAsignada.toUpperCase()} <span class="casa ${casaAsignada}">${escudos[casaAsignada]}</span>`;
+    resultadoEl.innerHTML = `Propuesta de casa:
+    <span class="casa ${casaAsignada}">
+    ${casaAsignada.toUpperCase()} ${escudos[casaAsignada]}
+    </span>`;
 
     document.getElementById("puntos").style.color = "white";
 }
