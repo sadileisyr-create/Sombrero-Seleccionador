@@ -6,16 +6,16 @@ let estudiantes = {
 };
 
 const tabla = {
-    1: { A: "hufflepuff", B: "ravenclaw", C: "gryffindor", D: "slytherin" },
-    2: { A: "ravenclaw", B: "gryffindor", C: "slytherin", D: "hufflepuff" },
-    3: { A: "gryffindor", B: "slytherin", C: "hufflepuff", D: "ravenclaw" },
-    4: { A: "slytherin", B: "hufflepuff", C: "ravenclaw", D: "gryffindor" },
-    5: { A: "hufflepuff", B: "ravenclaw", C: "gryffindor", D: "slytherin" },
-    6: { A: "ravenclaw", B: "gryffindor", C: "slytherin", D: "hufflepuff" },
-    7: { A: "gryffindor", B: "slytherin", C: "hufflepuff", D: "ravenclaw" },
-    8: { A: "slytherin", B: "hufflepuff", C: "ravenclaw", D: "gryffindor" },
-    9: { A: "hufflepuff", B: "ravenclaw", C: "gryffindor", D: "slytherin" },
-    10: { A: "ravenclaw", B: "gryffindor", C: "slytherin", D: "hufflepuff" },
+    1: { A: "gryffindor", B: "ravenclaw", C: "hufflepuff", D: "slytherin" },
+    2: { A: "gryffindor", B: "hufflepuff", C: "ravenclaw", D: "slytherin" },
+    3: { A: "gryffindor", B: "ravenclaw", C: "hufflepuff", D: "slytherin" },
+    4: { A: "gryffindor", B: "slytherin", C: "hufflepuff", D: "ravenclaw" },
+    5: { A: "hufflepuff", B: "slytherin", C: "ravenclaw", D: "gryffindor" },
+    6: { A: "ravenclaw", B: "slytherin", C: "gryffindor", D: "hufflepuff" },
+    7: { A: "slytherin", B: "gryffindor", C: "hufflepuff", D: "ravenclaw" },
+    8: { A: "gryffindor", B: "hufflepuff", C: "ravenclaw", D: "slytherin" },
+    9: { A: "hufflepuff", B: "gryffindor", C: "slytherin", D: "ravenclaw" },
+    10: { A: "ravenclaw", B: "slytherin", C: "hufflepuff", D: "gryffindor" },
 };
 
 const escudos = {
